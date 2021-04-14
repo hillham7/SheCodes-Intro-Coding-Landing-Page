@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+body{
+    background-color: rgba(253, 228, 6, 0.89);
+}
+
+h1{
+    text-align: center; 
+    color:red;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
+    color:red;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    text-align: center;
+    color: navy;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    line-height: 110%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+button{
+    display:block;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:red;
+    background:rgb(134, 248, 3);
+    font-size: 25px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    transition: all 200ms ease-in-out;
+    box-shadow: 2px 2px 2px black;
+}
+
+button:hover{
+    color: red;
+    background:lightyellow;
+
+}
+
+.coder {
+    text-align: center;
+    color:red;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <h1>
+    <strong>
+        <em>I Love Mexican Food!!</em>
+    </strong>
+    </h1>
+    <h2>
+        <strong>
+        ...especially 
+        <a href="https://en.wikipedia.org/wiki/New_Mexican_cuisine"> 
+        New Mexican</a>
+        & <a href="https://en.wikipedia.org/wiki/Tex-Mex"> TexMex</a> from the West Coast.
+        </strong>
+    </h2>
+<img src="https://cdn.vox-cdn.com/thumbor/wdyWEHcFb88uZzUUnWEee4g9lGA=/0x0:1024x683/1200x900/filters:focal(431x261:593x423)/cdn.vox-cdn.com/uploads/chorus_image/image/54807847/Borracha_overhead.11.jpg" 
+alt="Mexican Food">
+<p>
+       Mexican cuisine consists of the cooking cuisine and traditions of the modern state of Mexico. 
+       It's roots lie in a combination of Mesoamerican and Spanish cuisine. It's history over the 
+       centuries has resulted in regional cuisines based on local conditions, including Baja Med, Chiapas, 
+       Veracruz, Oaxacan, and the American cuisines of <a href="https://en.wikipedia.org/wiki/New_Mexican_cuisine"> New Mexican</a> 
+       and <a href="https://en.wikipedia.org/wiki/Tex-Mex"> 
+        TexMex.</a> 
+   </p>
+<button>
+    <strong>
+        Tu quieres tacos?
+    </strong>
+</button>
+<p class="coder">
+    <strong>
+    Coded by <a href="http://www.hillaryhamilton.com/"> Senorita Hamilton.
+    </strong>
+    </p>
+    <script>
+        function tacos() {
+            let firstName = prompt("Hola, what is your first name?");
+            let answer = prompt("What is your favorite Mexican dish?");
+
+            answer = answer.toLowerCase().trim();
+
+            if (answer === "tacos" || answer === "burritos" || answer === "taco" || answer === "burrito") {
+                alert("Yum! 🌮🌯");
+            } else {
+                alert("Muchas gracias!");
+            }
+        }
+
+        let tacosButton = document.querySelector("button");
+        tacosButton.addEventListener("click", tacos);
+    </script>
+</body>
+</html>
